@@ -54,20 +54,24 @@ export default {
     BarChartTable
   },
   created() {
-    this.api
-      .structure()
-      .then(res => {
-        this.resources.structure = res;
-        return this.api.holdings(res.holdings);
-      })
-      .then(res => {
-        this.resources.aggregation = res;
-      })
-      .catch(err => {
-        this.error = err;
-      });
+    this.update();
   },
   methods: {
+    update() {
+      this.api
+        .structure()
+        .then(res => {
+          this.selection = null;
+          this.resources.structure = res;
+          return this.api.holdings(res.holdings);
+        })
+        .then(res => {
+          this.resources.aggregation = res;
+        })
+        .catch(err => {
+          this.error = err;
+        });
+    },
     select(selection) {
       this.selection = selection;
     }

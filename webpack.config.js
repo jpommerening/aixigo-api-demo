@@ -18,6 +18,7 @@ module.exports = {
       vue: "vue/dist/vue.min.js"
     }
   },
+  devtool: "sourcemap",
   module: {
     rules: [
       {

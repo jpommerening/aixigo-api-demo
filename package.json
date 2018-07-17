@@ -11,7 +11,7 @@
     "start": "webpack-dev-server -d",
     "test": "jest --config test/unit/jest.conf.js --coverage",
     "lint": "eslint --ext .js,.vue src test/unit",
-    "build": "webpack -p"
+    "build": "webpack -d"
   },
   "dependencies": {
     "d3": "5.5.0",
