@@ -4,7 +4,7 @@ import api from "./api";
 
 const config = {
   debug: false,
-  host: "http://ppcm029.ac.aixigo.de:8000"
+  host: "http://pms.ac.aixigo.de:8000"
 };
 
 /* eslint-disable no-new */
