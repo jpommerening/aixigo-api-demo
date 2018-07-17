@@ -1,0 +1,24 @@
+@function list-apply($list, $fn, $args...) {
+  $result: $list;
+  $f: get-function($fn);
+
+  @for $i from 1 through length($list) {
+    $value: nth($list, $i);
+    $map-args: join($value, $args);
+    $mapped: call($f, $map-args...);
+    $result: set-nth($result, $i, $mapped);
+  }
+
+  @return $result;
+}
+
+$rfs-inactive-border-color: #696969 !default;
+$rfs-inactive-background-color: #ddd !default;
+$rfs-properties-palette: #44ab69 #05c2d3 #3884a3 #f08f4f #fc5963 #c1414b #a3cf5e
+  #fdca40 #c96480 #7160c1 !default;
+$rfs-properties-palette-alternative: list-apply(
+  $rfs-properties-palette,
+  lighten,
+  20%
+) !default;
+$rfs-transition-duration: 0.4s !default;

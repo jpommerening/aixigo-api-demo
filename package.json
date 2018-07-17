@@ -1,0 +1,76 @@
+{
+  "name": "aixigo-api-demo",
+  "version": "0.1.0",
+  "description": "aixigo Wealth Management API demo with Vue.js and D3.js",
+  "main": "src/index.js",
+  "repository": "https://github.com/aixigo/aixigo-api-demo.git",
+  "author": "Jonas Pommerening <jonas.pommerening@aixigo.de>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server -d",
+    "test": "jest --config test/unit/jest.conf.js --coverage",
+    "lint": "eslint --ext .js,.vue src test/unit",
+    "build": "webpack -p"
+  },
+  "dependencies": {
+    "d3": "5.5.0",
+    "string-hash": "^1.1.3",
+    "vue": "^2.5.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^21.0.2",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-stage-2": "^6.22.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^11.3.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-vue": "^4.0.0",
+    "file-loader": "^1.1.4",
+    "jest": "^22.0.4",
+    "jest-serializer-vue": "^0.3.0",
+    "node-sass": "^4.9.2",
+    "portfinder": "^1.0.13",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.1.6",
+    "postcss-url": "^7.2.1",
+    "prettier": "^1.13.7",
+    "sass-loader": "^7.0.3",
+    "semver": "^5.3.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "url-loader": "^0.5.8",
+    "vue-jest": "^2.6.0",
+    "vue-loader": "^15.2.4",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "keywords": [
+    "d3.js",
+    "vue"
+  ]
+}
